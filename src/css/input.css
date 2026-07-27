@@ -1,2 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
+
+@theme {
+  --font-Playfair: "Playfair Display";
+  --font-DMmono: "DM Mono";
+  --font-DMsans: "DM Sans";
+  --color-muted: #7a7668;
+  --color-accent: #C4704A;
+  --color-foreground:#1c1b18;
+  --color-primary: #2b3b2c;
+  --color-border: #1c1b181f;
+
+
+
+}
