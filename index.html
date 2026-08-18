@@ -1,36 +1,155 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link href="./src/css/styles.css" rel="stylesheet">
-  <link href="./src/css/output.css" rel="stylesheet">
-  <title>Restaurant Landing Page</title>
-</head>
-<body>
-
-  <!-- Header Start -->
-  <header class="w-full font-DMsans">
-    <nav class="w-full flex justify-around items-center py-6 border border-border px-10">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./src/css/styles.css" rel="stylesheet" />
+    <link href="./src/css/output.css" rel="stylesheet" />
+    <title>Restaurant Landing Page</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="w-full font-DMsans relative">
+      <!-- Navbar Start -->
+      <nav
+        class="w-full flex justify-around items-center py-6 border-b border-border bg-background px-10 fixed z-50"
+      >
         <a href="" class="flex flex-col items-start">
-          <h1 class="text-foreground text-2xl font-Playfair -mb-1 font-medium tracking-tight">
-          Maison Leroux
-        </h1>
-        <p class="font-DMmono font-light text-xs text-muted tracking-wider uppercase">
-          Paris · Est. 1998
-        </p>
+          <h1
+            class="text-foreground text-2xl font-Playfair -mb-1 font-medium tracking-tight"
+          >
+            Maison Leroux
+          </h1>
+          <p
+            class="font-DMmono font-light text-xs text-muted tracking-[0.2em] uppercase"
+          >
+            Paris · Est. 1998
+          </p>
         </a>
 
-      <div>
-        <ul class="flex justify-between items-center gap-10 transition-all ease-in-out text-sm">
-          <li class="text-foreground hover:text-accent transition-all ease-in-out"><a href="#Menu">Menu</a></li>
-          <li class="text-foreground hover:text-accent transition-all ease-in-out"><a href="#Story">Story</a></li>
-          <li class="text-foreground hover:text-accent transition-all ease-in-out"><a href="#Gallery">Gallery</a></li>
-          <li class="text-foreground hover:text-accent transition-all ease-in-out"><a href="#Reserve">Reserve</a></li>
-          <li class="text-white  bg-primary hover:bg-accent px-4 py-2 transition-all ease-in-out"><a href="#BookaTable">Book a Table</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Header End -->
-</body>
+        <div>
+          <ul
+            class="flex justify-between items-center gap-10 transition-all duration-200 text-sm"
+          >
+            <li
+              class="text-foreground hover:text-accent transition-all duration-200"
+            >
+              <a href="#Menu">Menu</a>
+            </li>
+            <li
+              class="text-foreground hover:text-accent transition-all duration-200"
+            >
+              <a href="#Story">Story</a>
+            </li>
+            <li
+              class="text-foreground hover:text-accent transition-all duration-200"
+            >
+              <a href="#Gallery">Gallery</a>
+            </li>
+            <li
+              class="text-foreground hover:text-accent transition-all duration-200"
+            >
+              <a href="#Reserve">Reserve</a>
+            </li>
+            <li
+              class="text-white bg-primary hover:bg-accent px-4 py-2 transition-all duration-200"
+            >
+              <a href="#BookaTable">Book a Table</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <section class="w-full h-screen flex items-center">
+        <div
+          class="w-1/2 h-full bg-background pt-32 px-24 pb-16 flex flex-col justify-end"
+        >
+          <span
+            class="font-DMmono mb-6 tracking-[0.25em] uppercase text-accent text-xs"
+            >Fine Dining · Paris 8ème</span
+          >
+          <h1
+            class="font-Playfair text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 text-foreground"
+          >
+            Where every
+            <br />
+            <em>meal becomes</em>
+            <br />
+            a memory.
+          </h1>
+          <p class="mb-10 text-lg text-muted leading-relaxed max-w-sm">
+            A quiet corner of the 8th arrondissement. Seasonal French cuisine, a
+            cellar of 400 labels, and tables that invite you to stay.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href=""
+              class="bg-primary inline-flex items-center gap-3 text-background text-sm tracking-wide px-7 py-3.5 hover:bg-accent transition-all duration-300"
+            >
+              <span>Reserve a Table</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                data-fg-d3bl45="0.8:1.23435:node_modules/lucide-react:172:15:6218:24:e:ArrowRight::::::s5N"
+                data-fgid-d3bl45=":ro:"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a
+              href=""
+              class="border border-foreground/20 inline-flex items-center px-7 py-3.5 text-foreground text-sm tracking-wide hover:text-accent hover:border-accent transition-all duration-300"
+              >View Menu</a
+            >
+          </div>
+          <div class="mt-14 pt-6 border-t border-border flex flex-wrap gap-8">
+            <div class="">
+              <div
+                class="text-muted uppercase text-[10px] tracking-[0.2em] mb-1"
+              >
+                lunch
+              </div>
+              <div class="text-sm">Tue – Sat, 12:00–14:30</div>
+            </div>
+            <div class="">
+              <div
+                class="text-muted uppercase text-[10px] tracking-[0.2em] mb-1"
+              >
+                dinner
+              </div>
+              <div class="text-sm">Tue – Sun, 19:00–22:30</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-1/2 h-screen relative">
+          <img
+            class="w-full h-full object-cover brightness-95"
+            src="./src/images/header img.avif"
+            alt="jeader img"
+          />
+          <div
+            class="absolute bottom-12 left-8 bg-background/90 max-w-[200px] py-4 px-5 backdrop-blur-sm"
+          >
+            <div class="text-3xl font-medium mb-0.5">★★★</div>
+            <div class="text-xs text-muted leading-snug">
+              Three Michelin stars, 2019–2025
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
+    </header>
+    <!-- Header End -->
+  </body>
 </html>
