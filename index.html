@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link href="./src/css/styles.css" rel="stylesheet" />
@@ -133,7 +133,7 @@
 
         <div class="w-1/2 h-screen relative">
           <img
-            class="w-full h-full object-cover brightness-95"
+            class="w-full h-full object-cover brightness-90"
             src="./src/images/header img.avif"
             alt="jeader img"
           />
@@ -147,9 +147,209 @@
           </div>
         </div>
       </section>
-      <br /><br /><br /><br />
-      <br /><br /><br /><br />
     </header>
     <!-- Header End -->
+
+    <!-- Content Start -->
+    <section id="Story" class="w-full px-10 py-36 bg-background">
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-[2fr_3fr] gap-12 md:gap-24 items-center"
+      >
+        <div class="">
+          <span
+            class="text-[10px] tracking-[0.25em] uppercase text-muted font-DMmono"
+            >Our Story</span
+          >
+          <h2 class="mt-4 text-5xl font-Playfair">
+            A kitchen built on
+            <em>patience</em>
+            and produce.
+          </h2>
+        </div>
+        <div class="text-muted leading-relaxed">
+          <p class="mb-5">
+            Chef Édouard Leroux returned from Lyon in 1998 with a single
+            ambition: to cook the kind of food that made his grandmother leave
+            the table reluctantly. No theatre, no foam. Just honest technique
+            and ingredients worth travelling for.
+          </p>
+          <p class="mb-5">
+            Our suppliers are named on the menu. The heirloom tomatoes come from
+            Gilles Cornu in Provence. The cheeses are selected weekly by Maître
+            Fromager Sabine Aubert. The wine list is built around small-domaine
+            Burgundy and Alsatian whites, with a particular fondness for
+            producers who farm biodynamically.
+          </p>
+          <p class="">
+            A meal here is unhurried. We hope you will feel that immediately.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Menu" class="w-full px-10 py-36 bg-secondary">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-row justify-between items-center mb-14">
+          <div>
+            <div
+              class="text-[10px] text-muted font-DMmono tracking-[0.25em] uppercase"
+            >
+              Carte du Jour
+            </div>
+            <div class="text-5xl text-foreground font-Playfair">
+              Dishes worth the journey.
+            </div>
+          </div>
+          <div class="flex flex-row gap-2 items-center">
+            <button
+              class="border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
+            >
+              Starters
+            </button>
+            <button
+              class="border border-border py-2 px-4 text-xs text-background tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200 bg-primary"
+            >
+              Mains
+            </button>
+            <button
+              class="border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
+            >
+              Deserts
+            </button>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-px bg-border">
+          <div class="bg-secondary">
+            <div class="relative overflow-hidden h-65">
+              <img
+                class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                src="./src/images/menu img 1.avif"
+                alt=""
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="px-2 py-1 text-[10px] font-DMmono tracking-[0.15em] text-foreground bg-background/90 uppercase"
+                  >Chef's Favourite</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row justify-between gap-4 items-start p-7">
+              <div class="flex-1">
+                <div
+                  class="text-[10px] text-muted font-DMmono tracking-[0.2em] uppercase mb-2"
+                >
+                  Signature
+                </div>
+                <h3 class="text-xl mb-2 font-Playfair">Duck Confit</h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  Slow-rendered Périgord duck leg, lentils du Puy, sour cherry
+                  reduction, micro watercress.
+                </p>
+              </div>
+              <div class="text-lg mt-6 font-Playfair">$42</div>
+            </div>
+          </div>
+
+          <div class="bg-secondary">
+            <div class="relative overflow-hidden h-65">
+              <img
+                class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                src="./src/images/menu img 2.avif"
+                alt=""
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="px-2 py-1 text-[10px] font-DMmono tracking-[0.15em] text-foreground bg-background/90 uppercase"
+                  >Seasonal</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row justify-between gap-4 items-start p-7">
+              <div class="flex-1">
+                <div
+                  class="text-[10px] text-muted font-DMmono tracking-[0.2em] uppercase mb-2"
+                >
+                  From the Sea
+                </div>
+                <h3 class="text-xl mb-2 font-Playfair">Seared Halibut</h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  Cornish halibut, cauliflower velouté, caperberry, golden
+                  raisin, crisp capers.
+                </p>
+              </div>
+              <div class="text-lg mt-6 font-Playfair">$48</div>
+            </div>
+          </div>
+
+          <div class="bg-secondary">
+            <div class="relative overflow-hidden h-65">
+              <img
+                class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                src="./src/images/menu img 3.avif"
+                alt=""
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="px-2 py-1 text-[10px] font-DMmono tracking-[0.15em] text-foreground bg-background/90 uppercase"
+                  >Vegetarian</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row justify-between gap-4 items-start p-7">
+              <div class="flex-1">
+                <div
+                  class="text-[10px] text-muted font-DMmono tracking-[0.2em] uppercase mb-2"
+                >
+                  Vegetable
+                </div>
+                <h3 class="text-xl mb-2 font-Playfair">Truffle Risotto</h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  Carnaroli rice, aged Parmigiano, Périgord black truffle,
+                  chives, 48-hour stock.
+                </p>
+              </div>
+              <div class="text-lg mt-6 font-Playfair">$36</div>
+            </div>
+          </div>
+
+          <div class="bg-secondary">
+            <div class="relative overflow-hidden h-65">
+              <img
+                class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                src="./src/images/menu img 4.avif"
+                alt=""
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="px-2 py-1 text-[10px] font-DMmono tracking-[0.15em] text-foreground bg-background/90 uppercase"
+                  >House Classic</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row justify-between gap-4 items-start p-7">
+              <div class="flex-1">
+                <div
+                  class="text-[10px] text-muted font-DMmono tracking-[0.2em] uppercase mb-2"
+                >
+                  Dessert
+                </div>
+                <h3 class="text-xl mb-2 font-Playfair">Mille-feuille</h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  Caramelised puff pastry, Tahitian vanilla crème légère, wild
+                  strawberries, coulis.
+                </p>
+              </div>
+              <div class="text-lg mt-6 font-Playfair">$18</div>
+            </div>
+          </div>
+        </div>
+
+        <div></div>
+      </div>
+    </section>
+
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
   </body>
 </html>
