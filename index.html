@@ -33,17 +33,17 @@
             class="hidden md:flex justify-between items-center gap-10 transition-all duration-200 text-sm"
           >
             <li
-              class="text-foreground hover:text-accent transition-all duration-200"
+              class="text-foreground  hover:text-accent transition-all duration-200"
             >
               <a href="#Menu">Menu</a>
             </li>
             <li
-              class="text-foreground hover:text-accent transition-all duration-200"
+              class="text-foreground  hover:text-accent transition-all duration-200"
             >
               <a href="#Story">Story</a>
             </li>
             <li
-              class="text-foreground hover:text-accent transition-all duration-200"
+              class="text-foreground  hover:text-accent transition-all duration-200"
             >
               <a href="#Gallery">Gallery</a>
             </li>
@@ -56,7 +56,7 @@
             </li>
           </ul>
 
-          <button class="md:hidden cursor-pointer">
+          <button id="small-menu-toggle-btn" class="md:hidden cursor-pointer hover:bg-black/10 rounded-full p-1 transition-all duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -95,18 +95,18 @@
           </button>
         </div>
 
-        <div
+        <div id="small-menu"
           class="hidden md:hidden bg-background border-b border-border px-6 pb-6 flex flex-col gap-4"
         >
-          <a href="#Menu" class="text-base py-1 border-b border-border/40"
+          <a href="#Menu" class="text-base py-1 border-b border-border/40 hover:bg-secondary"
             >Menu</a
-          ><a href="#Story" class="text-base py-1 border-b border-border/40"
+          ><a href="#Story" class="text-base py-1 border-b border-border/40 hover:bg-secondary"
             >Story</a
-          ><a href="#Gallery" class="text-base py-1 border-b border-border/40"
+          ><a href="#Gallery" class="text-base py-1 border-b border-border/40 hover:bg-secondary"
             >Gallery</a
           ><a
             href="#BookaTable"
-            class="mt-2 px-5 py-3 bg-primary text-background text-sm text-center tracking-wide"
+            class="mt-2 px-5 py-3 bg-primary text-background text-sm text-center tracking-wide hover:bg-accent transition-all duration-200"
             >Book a Table</a
           >
         </div>
@@ -712,5 +712,7 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <script src="./src/js/menu-toggle.js"></script>
   </body>
 </html>
