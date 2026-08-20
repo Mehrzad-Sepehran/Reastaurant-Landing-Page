@@ -35,6 +35,7 @@
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-light: 300;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --tracking-tight: -0.025em;
@@ -482,6 +483,12 @@
     margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
   }
+  .gap-x-12 {
+    column-gap: calc(var(--spacing) * 12);
+  }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
+  }
   .overflow-auto {
     overflow: auto;
   }
@@ -554,6 +561,9 @@
   .bg-border {
     background-color: var(--color-border);
   }
+  .bg-foreground {
+    background-color: var(--color-foreground);
+  }
   .bg-primary {
     background-color: var(--color-primary);
   }
@@ -610,6 +620,9 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
   .py-36 {
     padding-block: calc(var(--spacing) * 36);
@@ -695,6 +708,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
   .tracking-\[0\.2em\] {
     --tw-tracking: 0.2em;
     letter-spacing: 0.2em;
@@ -755,11 +772,17 @@
   .scheme-dark {
     color-scheme: dark;
   }
+  .opacity-40 {
+    opacity: 40%;
+  }
   .opacity-60 {
     opacity: 60%;
   }
   .opacity-80 {
     opacity: 80%;
+  }
+  .opacity-90 {
+    opacity: 90%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -841,6 +864,9 @@
     .hover\:opacity-90:hover {
       opacity: 90%;
     }
+    .hover\:opacity-100:hover {
+      opacity: 100%;
+    }
   }
   .focus\:border-accent:focus {
     border-color: var(--color-accent);
@@ -858,6 +884,9 @@
     }
     .md\:grid-cols-\[2fr_3fr\] {
       grid-template-columns: 2fr 3fr;
+    }
+    .md\:flex-row {
+      flex-direction: row;
     }
     .md\:gap-4 {
       gap: calc(var(--spacing) * 4);
