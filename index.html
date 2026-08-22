@@ -266,30 +266,35 @@
             </div>
           </div>
           <div class="flex flex-row gap-2 items-center">
-            <button
-              class="border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
+            <button id="all-btn"
+              class="dish-btn border border-border py-2 px-4 text-xs tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200 bg-primary text-background"
+            >
+              All
+            </button>
+            <button id="starters-btn"
+              class="dish-btn border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
             >
               Starters
             </button>
-            <button
-              class="border border-border py-2 px-4 text-xs text-background tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200 bg-primary"
+            <button id="mains-btn"
+              class="dish-btn border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
             >
               Mains
             </button>
-            <button
-              class="border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
+            <button id="deserts-btn"
+              class="dish-btn border border-border py-2 px-4 text-xs text-foreground tracking-wide cursor-pointer hover:border-foreground/40 transition-all duration-200"
             >
               Deserts
             </button>
           </div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-px bg-border">
+        <div id="dishes-container" class="grid md:grid-cols-2 gap-px">
           <div class="bg-secondary">
             <div class="relative overflow-hidden h-65">
               <img
                 class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
-                src="./src/images/menu img 1.avif"
+                src="./src/images/Duck-Confit.avif"
                 alt=""
               />
               <div class="absolute top-4 left-4">
@@ -320,7 +325,7 @@
             <div class="relative overflow-hidden h-65">
               <img
                 class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
-                src="./src/images/menu img 2.avif"
+                src="./src/images/Seared-Halibut.avif"
                 alt=""
               />
               <div class="absolute top-4 left-4">
@@ -351,7 +356,7 @@
             <div class="relative overflow-hidden h-65">
               <img
                 class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
-                src="./src/images/menu img 3.avif"
+                src="./src/images/Truffle-Risotto.avif"
                 alt=""
               />
               <div class="absolute top-4 left-4">
@@ -382,7 +387,7 @@
             <div class="relative overflow-hidden h-65">
               <img
                 class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
-                src="./src/images/menu img 4.avif"
+                src="./src/images/Mille-feuille.avif"
                 alt=""
               />
               <div class="absolute top-4 left-4">
@@ -713,6 +718,7 @@
     </footer>
     <!-- Footer End -->
 
-    <script src="./src/js/menu-toggle.js"></script>
+    <script src="./src/js/navbar-menu-toggle.js"></script>
+    <script src="./src/js/menu-section-dishes.js"></script>
   </body>
 </html>
